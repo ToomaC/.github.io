@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+    
+<head> </head>
+    
+    
+<body>
+    
+ <span>heyyyy</span>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+<script>
+    
+$(window).load(function(){
+    $("a").clock(function (){
+        top.window.location.href=$(this).Attr("href");
+        return true;
+    })
+})
+    
+$(".spf-page-left-nav-panel:has(.spf-page-left-nav-label:has(span:contains ('What')))", window.parent.document).hide(); //Hides WHAT
+    
+$(".spf-page-left-nav-panel:has(.spf-page-left-nav-label:has(span:contains ('Popular Pages')))", window.parent.document).hide(); //Hides WHAT
+    
+$(".spf-page-left-nav-panel:has(.spf-page-left-nav-label:has(span:contains ('Contacts')))", window.parent.document).hide(); //Hides WHAT
+    
+$(".spf-view-page-announcement-panel", window.parent.document) .css('cssText, border:none;'); //Hides Announcement Border  
+    
+$(".spf-page-detail-container", window.parent.document) .css('cssText, border:none;'); //Hides Page Border
+    
+$(".spf-panel-list-panel:has(div:has(form:has(div:has(input))))", window.parent.document) .hide(); //Hides top nav bar
+    
+$("div.spf-page-detail-edit-panel.sd-clearfix", window.parent.document) .hide(); //Hides rating
+    
+$('#screen', window.parent.document).css('cssText', 'width:100%!important;'); // Responsive Page
+
+$('html', window.parent.document).css('cssText', 'background: white!important;'); //Page Background
+    
+$('div.eRegion.content.region-main-content', window.parent.document).css('cssText', 'min-height: 1px;'); //Min Height
+       
+</script>
+
+</body>
+</html>
